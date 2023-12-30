@@ -58,6 +58,28 @@ def create_assistant():
             },
         },
         {
+            {
+                "type": "function",
+                "function": {
+                    "name": "git_clone",
+                    "description": "Clones a repository from a given URL to a specified directory",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "repo_url": {
+                                "type": "string",
+                                "description": "The URL of the repository to clone",
+                            },
+                            "directory": {
+                                "type": "string",
+                                "description": "The local directory to clone the repository into"
+                            }
+                        },
+                        "required": ["repo_url", "directory"]
+                    }
+                }
+            }
+
             "type": "function",
             "function": {
                 "name": "save_content_to_file",
