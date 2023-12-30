@@ -140,3 +140,13 @@ Feel free to log an issue on our [GitHub issues page](https://github.com/natzar/
 - [How to contribute](#how-to-contribute)
 - [License](#license)
 
+
+# Assistant Role Split
+
+The AI Developer will now have two distinct roles:
+
+1. **Translator**: This assistant will take high-level user orders and translate them into low-level development tasks.
+
+2. **Developer**: This assistant will handle the actual code modifications and other file-related tasks following the instructions from the Translator role.
+
+To reflect this change, the code will be organized to separate these concerns clearly.
